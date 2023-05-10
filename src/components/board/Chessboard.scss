@@ -1,0 +1,98 @@
+.chessboard {
+    display: grid;
+    grid-template-columns: repeat(8, 70px);
+    grid-template-rows: repeat(8, 70px);
+    flex-wrap: wrap;
+    background-color: rgb(30, 165, 183);
+    width: 568px;
+    height: 568px;
+    border: 4px solid rgb(42, 232, 93);
+
+
+}
+
+.newgame {
+    width: 120px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: rgb(244, 5, 5)
+}
+
+.newgame:hover {
+    transform: scale(1.05);
+    background-color: rgb(255, 0, 0);
+    color: black;
+}
+
+.revers {
+    width: 120px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: rgb(244, 5, 5);
+
+
+}
+
+.revers:hover {
+    transform: scale(1.05);
+    background-color: rgb(212, 0, 0);
+    color: black;
+
+}
+
+.reversnull {
+    width: 120px;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: rgb(66, 58, 50);
+}
+
+.white {
+    color: aliceblue
+}
+
+.black {
+    color: black;
+}
+
+#pawn-promotion-modal {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+    .modal-body {
+        display: flex;
+        flex-direction: column;
+       // position: absolute;
+        height: 320px;
+        width: 90px;
+        background-color: rgba(16, 1, 1, 0.8);
+        justify-content: space-between;
+        align-items: center;
+        
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        img:hover {
+            cursor: pointer;
+            background-color: rgb(242, 235, 232, 0.3);
+            border-radius: 50%;
+            transform: scale(1.25);
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+    }
+
+.hidden{
+    display: none;
+ }
